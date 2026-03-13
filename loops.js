@@ -52,17 +52,93 @@
 // }
 
 //write a program to print of user chosi range frmo a to b// let a = Number(prompt("Enter the table number: "));
-let a = Number(prompt("Enter the table number: "));
-let f = Number(prompt("Enter the Starting Range: "));
-let g = Number(prompt("Enter the Ending Range: "));
-if (isNaN(a) || isNaN(f) || isNaN(g)) {
-  if ( a < 0 ){
-    console.log("No negative numbers");
-  } else {
-    for (let i = f; i <= g; i++) {
-      console.log(`${a} x ${i} = ${i * a}`);
-    }
+// let a = Number(prompt("Enter the table number: "));
+// let f = Number(prompt("Enter the Starting Range: "));
+// let g = Number(prompt("Enter the Ending Range: "));
+// if (isNaN(a) || isNaN(f) || isNaN(g)) {
+//   if ( a < 0 ){
+//     console.log("No negative numbers");
+//   } else {
+//     for (let i = f; i <= g; i++) {
+//       console.log(`${a} x ${i} = ${i * a}`);
+//     }
+//   }
+// } else {
+//   console.log("Invalid string");
+// }
+
+// let names = ["Ganesh", "Kantle", "Rukmini", "Vasanth", "Disha", "Patani"]
+// for(let i=0; i<names.length; i++){
+//   console.log(names[i]);
+// }
+
+//write a program to write the names of the fruits and print fruits in capitleltter
+// let fruits = ["banana","apple","pineapple","mango","grapes","guava","watermelon","chikku","jackfruit","custurd apple"]
+// for(let i=0; i<fruits.length; i++){
+//   console.log(fruits[i].toUpperCase());
+// }
+
+//write a program to print a names of 10 students in array if our names is prsetn make it captile
+// let names = ["Ganesh", "Kantle", "Rukmini", "Vasanth", "Disha", "Patani"];
+
+//write 10 names in that print the name of 10 names
+// let names = ["Ganesh", "Kantle", "Rukmini", "Vasanth", "Disha", "Patani", "Rashmika" ,"Mandanna", "Vijay", "Devarkonda"];
+// for (let i = 0; i < names.length; i++) {
+//     let a = names[i].charAt(0).toUpperCase();
+//     let c = names[i].slice(1,names[i].length-1)
+//     let b = names[i].charAt(names[i].length-1).toUpperCase();
+//     console.log(a.concat(c).concat(b));
+
+// let first = names[i].slice(0,1).toUpperCase();
+// let middle = names[i].slice(1,names[i].length-1);
+// let last = names[i].slice(-1).toUpperCase();
+// console.log(first+middle+last);
+// }
+
+//write a program to print the names of 10 names in array each names make it capitle and return it inside new array
+// let names = ["Ganesh", "Kantle", "Rukmini", "Vasanth", "Disha", "Patani", "Rashmika" ,"Mandanna", "Vijay", "Devarkonda"];
+// for(let i=0; i<names.length; i++){
+//  let a = names[i].toUpperCase();
+//  let b = [...a];
+// //  console.log(b);
+// console.log(names);
+// }
+
+// let names = [
+//   "Ganesh",
+//   "Kantle",
+//   "Rukmini",
+//   "Vasanth",
+//   "Disha",
+//   "Patani",
+//   "Rashmika",
+//   "Mandanna",
+//   "Vijay",
+//   "Devarkonda",
+// ];
+// for (let i = names.length-1; i >= 0; i--) {
+//   console.log(names[i]);
+// }
+
+let names = [
+  "Rukmini",
+  "Vasanth",
+  "Disha",
+  "Patani",
+  "Rashmika",
+  "Mandanna",
+  "Vijay",
+  "Devarkonda",
+  "Ganesh",
+  "Kantle",
+];
+let newarry = [];
+for (let i = names.length - 1; i >= 0; i--) {
+  if (names[i] === "Ganesh" || names[i] === "Kantle") {
+    newarry.push(names[i].toUpperCase());
   }
-} else {
-  console.log("Invalid string");
+  else{
+    newarry.push(names[i]);
+  }
 }
+console.log(newarry);
