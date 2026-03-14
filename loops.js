@@ -120,25 +120,103 @@
 //   console.log(names[i]);
 // }
 
-let names = [
-  "Rukmini",
-  "Vasanth",
-  "Disha",
-  "Patani",
-  "Rashmika",
-  "Mandanna",
-  "Vijay",
-  "Devarkonda",
-  "Ganesh",
-  "Kantle",
-];
-let newarry = [];
-for (let i = names.length - 1; i >= 0; i--) {
-  if (names[i] === "Ganesh" || names[i] === "Kantle") {
-    newarry.push(names[i].toUpperCase());
-  }
-  else{
-    newarry.push(names[i]);
+// let names = [
+//   "Rukmini",
+//   "Vasanth",
+//   "Disha",
+//   "Patani",
+//   "Rashmika",
+//   "Mandanna",
+//   "Vijay",
+//   "Devarkonda",
+//   "Ganesh",
+//   "Kantle",
+// ];
+// let newarry = [];
+// for (let i = names.length - 1; i >= 0; i--) {
+//   if (names[i] === "Ganesh" || names[i] === "Kantle") {
+//     newarry.push(names[i].toUpperCase());
+//   }
+//   else{
+//     newarry.push(names[i]);
+//   }
+// }
+// console.log(newarry);
+
+//write a program to calculate sum of even number range from 0-100
+let num=0;
+for(let i=0; i<=100; i++){
+  if(i%2==0){
+    num+=i;
   }
 }
-console.log(newarry);
+console.log(num);
+
+//sum of odd num 0 -100
+
+num=0;
+for(let i=0; i<=100; i++){
+  if(i%2==1){
+    num+=i;
+  }
+}
+console.log(num);
+
+//to check given number i range prime or not
+
+function isPrimr(n) {
+  if (n == 2 || n == 3) {
+    return true;
+  }
+  if (n < 0 || n % 2 == 0) {
+    return false;
+  }
+  for (let i = 2; i < Math.sqrt(n); i++) {
+    if (i % n == 0) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(isPrimr(5));
+
+//write a program whather the given string is palindrom or not
+
+let c = "nnitinn";
+if(isNaN(c)){
+  let palindrome = c.split("").reverse().join("").toLowerCase();
+if (c == palindrome) {
+  console.log("It is palindrome");
+} else {
+  console.log("Not is palindrome");
+}
+}
+else{
+  console.log("Invalid Input");
+  
+}
+
+let a = 12;
+
+let prime = true;
+for(let i=2; i<a; i++){
+  if(a%i===0){
+    console.log("Not Prime");
+    prime = false;
+    break;
+  }
+  else{
+    console.log("Prime");
+    prime = true;
+    break;
+  }
+}
+
+
+//WRITE A PROGRAM to calculate the factorial of given number let prime = true;
+
+let fact=1;
+for(let i=1; i<=5; i++){
+  fact*=i;
+}
+console.log(fact);
