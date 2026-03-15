@@ -182,7 +182,7 @@ console.log(isPrimr(5));
 
 //write a program whather the given string is palindrom or not
 
-let c = "nnitinn";
+let c = "nitinn";
 if(isNaN(c)){
   let palindrome = c.split("").reverse().join("").toLowerCase();
 if (c == palindrome) {
