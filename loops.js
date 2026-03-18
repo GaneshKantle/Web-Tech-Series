@@ -325,13 +325,13 @@
 
 //write a program reverse the elements in the array of ravi shastry
 
-let a = ["apple", "mango", "ravi", "grapes", "shastry", "orange"];
+// let a = ["apple", "mango", "ravi", "grapes", "shastry", "orange"];
 
 
-let arr = [];
-for(let i=a.length-1; i>=0; i--){
+// let arr = [];
+// for(let i=a.length-1; i>=0; i--){
   
-}
+// }
 
 // let arr = [];
 // for (let i = a.length-1; i >= 0; i--) {
@@ -361,4 +361,5 @@ for(let i=a.length-1; i>=0; i--){
 //   return str.toUpperCase();
 // } 
 // console.log(arr);
+
 

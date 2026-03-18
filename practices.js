@@ -44,3 +44,50 @@
 // console.log(count);
 
 // console.log(currentMinutes, correctMinutes, c);
+
+// let a = 10;
+// let b = 40;
+// console.log(a);
+// console.log(b);
+
+// if(a>b && a>c){
+//     console.log("A is greater");
+// }
+// else if(b>c && b>a){
+//     console.log("B is greater");
+// }
+// else{
+//     console.log("C is greater");
+
+// }
+
+// console.log(Math.max(a,b,c));
+
+// Swap two numbers without a third variable//////////////////////////////////////////////////////////////////////////////////////
+// let a = 10;
+// let b = 40;
+// console.log(a);
+// console.log(b);
+// a=a+b;
+// b=a-b;
+// a=a-b;
+// console.log(a);
+// console.log(b);
+
+// Check if a number is prime//////////////////////////////////////////////////////////////////////////////////////
+let count = 0;
+
+function isPrime(n){
+    for (let i = 2; i < n; i++) {
+        if (n % i === 0) {
+          return false;
+        }
+        return true;
+      }      
+}
+
+if(isPrime(6)){
+    console.log("True");
+}else{
+    console.log("False");
+}
